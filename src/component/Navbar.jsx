@@ -53,15 +53,7 @@ function Navbar() {
     setIsScroll(window.scrollY >= 100 ? true : false);
   };
 
-  const handleIcon = () => {
-    setIsIcon(!isIcon);
-    const inputBox = document.querySelector(".input_box");
-    if (!isIcon) {
-      inputBox.classList.add("open");
-    } else {
-      inputBox.classList.remove("open");
-    }
-  };
+
 
   const handleInputClick = (event) => {
     event.stopPropagation();
