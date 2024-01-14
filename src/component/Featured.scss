@@ -39,7 +39,7 @@
             position: fixed;
             background-color: #101010fd;
             width: 80%;
-            height: 80vh;
+           
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
@@ -57,6 +57,7 @@
                 display: flex;
                 flex-direction: column;
                 align-items: center;
+                text-align: center;
 
                 h3{
                     font-size: 25px;
@@ -111,7 +112,7 @@
         .container_box{
            .video{
             iframe{
-                height: 300px;
+                height: 400px;
             }
            }
 
