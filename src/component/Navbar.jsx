@@ -66,7 +66,7 @@ function Navbar() {
   return (
     <div className={isScroll ? "navbar scroll" : "navbar"}>
       <div className="navbar_left">
-        <a style={{ zIndex: "2" }} href="home">
+        <a style={{ zIndex: "2" }} href="#home">
           {" "}
           <img src="img/logo.png" alt="logo" />
         </a>
