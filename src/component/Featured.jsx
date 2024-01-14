@@ -31,7 +31,7 @@ function Featured() {
           <div className="featured_info">
             <img
               className="featured_logo"
-              src="/img/cyberpunk.png"
+              src="img/cyberpunk.png"
               alt="cyberpunk"
             ></img>
             <p>

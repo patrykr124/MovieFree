@@ -68,7 +68,7 @@ function Navbar() {
       <div className="navbar_left">
         <a style={{ zIndex: "2" }} href="home">
           {" "}
-          <img src="/public/img/logo.png" alt="logo" />
+          <img src="public/img/logo.png" alt="logo" />
         </a>
 
         <ul className="menuListItem}">
