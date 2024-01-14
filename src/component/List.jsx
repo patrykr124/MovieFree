@@ -45,7 +45,7 @@ function List({ title, movieList, id }) {
       <div className="container">
         <h2 className="list_title">{title}</h2>
         <div className="box">
-          <Carousel
+          <Carousel 
             customRightArrow={
               <ArrowForwardIos
                 className="arrowCarIcon right"
@@ -62,7 +62,6 @@ function List({ title, movieList, id }) {
 
               />
             }
-            rtl="false"
             responsive={responsive}
             swipeable={true}
             draggable={true}
