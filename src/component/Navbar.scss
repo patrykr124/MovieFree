@@ -1,0 +1,247 @@
+.navbar{
+    width: 100%;
+    position: fixed;
+    top:0;
+    z-index: 999;
+    background: linear-gradient(180deg, rgba(21,21,21,1) 5%, rgba(255,255,255,0) 100%);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 85px;
+    transition: 0.3s;
+
+
+    .menuOpen{
+        background-color: black;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 45%;
+        height: 100vh;
+        display: flex;
+        justify-content: start;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: 0.3s;
+
+        &.active{
+            right: 0;
+        }
+        
+
+        .menuOpenContainer{
+            height: 50%;
+            width: 80%;
+
+            
+        }
+
+        .openItem{
+            color: white;
+            z-index: 10;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            margin-bottom: 20px;
+            .icon{
+                color: white;
+                font-size: 30px;
+
+
+            }
+
+           
+        }
+
+        ul{
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            margin-top: 40px;
+            
+            
+            li{
+                a{
+                    color: white;
+                    text-decoration: none;
+                    font-size: 30px;
+                    
+                }
+            }
+        }
+    }
+
+    &.scroll {
+        background-color: black;
+    }
+
+    .icon{
+        font-size: 25px;
+        cursor: pointer;
+    }
+
+    .navbar_right{
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        
+        img{
+            height: 40px;
+            width: 40px;
+            object-fit: cover;
+            box-shadow: 1px 1px 5px 1px rgba(66, 68, 90, 1);
+            border-radius: 10px;
+            
+
+        }
+
+       .profile{
+          
+        .settings{
+            display: none;
+            background-color: rgba(0, 0, 0, 0.757);
+            border-radius: 10px;
+            padding-top: 10px;
+        
+    
+           
+
+
+            li{
+                list-style: none;
+                margin-bottom: 10px;
+                a{
+                    text-decoration: none;
+                    color: white;
+                    padding: 20px;
+                    
+
+                    &:hover{
+                        color: var(--hover);
+                    }
+                }
+            }
+        }
+
+        &:hover {
+            .settings{
+                display: flex;
+                flex-direction: column;
+                position: absolute;
+                
+                
+            }
+        }
+       }
+       .input_box{
+        display: none;
+        position: fixed;
+        background-color: rgba(0, 0, 0, 0.705);
+        width: 100%;
+        height: 50vh;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        
+
+
+        &.open{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            
+        }
+
+        
+
+
+        .navbar_input{
+            padding: 10px 40px;
+            border: none;
+            border-radius: 10px;
+            background-color: rgba(209, 209, 209, 0.708);
+            z-index: 10;
+            font-size: 20px;
+            width: 50%;
+            color: black;
+            
+        
+    
+           }
+
+       }
+       
+
+    }
+
+    .navbar_left{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        img{
+            height: 50px;
+            cursor: pointer;
+        }
+
+
+        ul{
+            display: flex;
+            text-align: center;
+            align-items: center;
+
+            li{
+               list-style: none;
+               
+
+               a{
+                text-decoration: none;
+                margin-left: 30px;
+                font-size: 18px;
+                color: white;
+                text-transform: uppercase;
+                font-weight: 500;
+                transition: 0.3s;
+
+                &:hover{
+                    color: var(--hover)
+                }
+               }
+            }
+        }
+    }
+}
+
+.menuBtn{
+    display: none;
+}
+
+@media only screen and (max-width: 1200px) {
+    .menuBtn{
+        align-items: center;
+        display: flex;
+        
+    }
+
+    .menuListItem li{
+        display: none;
+        
+    }
+
+    .navbar_right .icon{
+        display: none;
+        
+    }
+    .navbar_left li{
+        display: none;
+        
+    }
+
+    
+}
