@@ -106,7 +106,7 @@ function Navbar() {
         <NotificationsActive className="icon" />
         <img
           className="avatarImg"
-          src="public/img/avatar.jpg"
+          src="img/avatar.jpg"
           alt="avatar"
         ></img>
         <div className="profile">
