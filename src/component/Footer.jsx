@@ -7,7 +7,7 @@ function Footer() {
     <div className="footer_section">
       <div className="container">
         <div className="footer_img">
-          <img src="public/img/logo.png" alt="logo" />
+          <img src="img/logo.png" alt="logo" />
         </div>
         <div className="description">
           <p>
